@@ -1,11 +1,18 @@
 /*
 CODED BY - : @VIMALATHAS VITHUSAN
+<<<<<<< HEAD
 2020/2021 BATCH😊
 
 LINKEDIN - https://www.linkedin.com/in/vimalathasvithusan/
 GITHUB - https://github.com/thasvithu
 YOUTUBE - https://www.youtube.com/@codewithvithu
 
+=======
+2020 BATCH
+
+LINKEDIN - https://www.linkedin.com/in/vimalathasvithusan/
+GITHUB - https://github.com/thasvithu
+>>>>>>> 4806100d48383a70b88fdca24014c7f2528feb84
 
 2016 JAVA(OOP) PRACTICAL PAPER - UNIVERSITY OF VAVUNIYA
 SECOND SEMESTER - NOVERMBER/DECEMBER 2017 
@@ -17,7 +24,11 @@ class Person {
 	private String name, nic;
 	private int age;
 	
+<<<<<<< HEAD
 	// ***CONSTRUCTOR***
+=======
+	//CONSTRUCTOR
+>>>>>>> 4806100d48383a70b88fdca24014c7f2528feb84
 	public Person() {}
 	
 	public Person(String name, String nic, int age) {
@@ -26,7 +37,11 @@ class Person {
 		this.age = age;
 	}
 	
+<<<<<<< HEAD
 	// ***METHODS***
+=======
+	//METHODS
+>>>>>>> 4806100d48383a70b88fdca24014c7f2528feb84
 	public void print() {
 		System.out.println("Name : " + name);
 		System.out.println("Nic : " + nic);
@@ -38,7 +53,11 @@ class Student extends Person {
 	private double gpa1, gpa2, gpa3, gpa4, finalgpa;
 	private String result;
 	
+<<<<<<< HEAD
 	// ***CONSTRUCTOR***
+=======
+	//CONSTRUCTOR
+>>>>>>> 4806100d48383a70b88fdca24014c7f2528feb84
 	public Student(String name, String nic, int age, double gpa1, double gpa2, double gpa3, double gpa4) {
 		super(name, nic, age);
 		
@@ -48,7 +67,11 @@ class Student extends Person {
 		this.gpa4 = gpa4;
 	}
 	
+<<<<<<< HEAD
 	// ***METHODS***
+=======
+	//METHODS
+>>>>>>> 4806100d48383a70b88fdca24014c7f2528feb84
 	public double calculateFinalGpa() {
 		finalgpa = (gpa1 + gpa2 + gpa3 + gpa4) / 4;
 		return finalgpa;
@@ -72,7 +95,11 @@ abstract class StaffMember extends Person {
 	double basicsalary, loaninstallment;
 	final double allowance = 7800;
 	
+<<<<<<< HEAD
 	// ***CONSTRUCTOR***
+=======
+	//CONSTRUCTOR
+>>>>>>> 4806100d48383a70b88fdca24014c7f2528feb84
 	public StaffMember() {}
 	
 	public StaffMember(String name, String nic, int age, double basicsalary, double loaninstallment) {
@@ -82,14 +109,22 @@ abstract class StaffMember extends Person {
 		this.loaninstallment = loaninstallment;
 	}
 	
+<<<<<<< HEAD
 	// ***ABSTRACT METHOD***
+=======
+	//ABSTRACT METHOD
+>>>>>>> 4806100d48383a70b88fdca24014c7f2528feb84
 	public abstract double getSalary();
 }
 
 class AcedemicStaff extends StaffMember {
 	final double academicallowance = 10;
 	
+<<<<<<< HEAD
 	// ***CONSTRUCTOR***
+=======
+	//CONSTRUCTOR
+>>>>>>> 4806100d48383a70b88fdca24014c7f2528feb84
 	public AcedemicStaff(String name, String nic, int age, double basicsalary, double loaninstallment) {
 		super(name, nic, age, basicsalary, loaninstallment);
 	}
@@ -103,12 +138,20 @@ class AcedemicStaff extends StaffMember {
 class NonAcedemicStaff extends StaffMember {
 	private double overtimehours, overtimepayment;
 	
+<<<<<<< HEAD
 	// ***CONSTRUCTOR***
+=======
+	//CONSTRUCTOR
+>>>>>>> 4806100d48383a70b88fdca24014c7f2528feb84
 	public NonAcedemicStaff(String name, String nic, int age, double basicsalary, double loaninstallment) {
 		super(name, nic, age, basicsalary, loaninstallment);
 	}
 	
+<<<<<<< HEAD
 	// ***METHODS***
+=======
+	//METHODS
+>>>>>>> 4806100d48383a70b88fdca24014c7f2528feb84
 	public double overtimeAmount() {
 		return (basicsalary / (20 * 8)) * overtimehours;
 	}
@@ -120,7 +163,11 @@ class NonAcedemicStaff extends StaffMember {
 }
 
 
+<<<<<<< HEAD
 // ***OBJECT CLASS***
+=======
+//OBJECT CLASS
+>>>>>>> 4806100d48383a70b88fdca24014c7f2528feb84
 public class Main {
     public static void main(String[] args) {
         Student student = new Student("John Doe", "123456789V", 20, 3.5, 3.8, 3.6, 3.7);
