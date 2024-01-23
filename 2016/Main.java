@@ -1,9 +1,11 @@
 /*
 CODED BY - : @VIMALATHAS VITHUSAN
-2020 BATCH
+2020/2021 BATCH😊
 
 LINKEDIN - https://www.linkedin.com/in/vimalathasvithusan/
 GITHUB - https://github.com/thasvithu
+YOUTUBE - https://www.youtube.com/@codewithvithu
+
 
 2016 JAVA(OOP) PRACTICAL PAPER - UNIVERSITY OF VAVUNIYA
 SECOND SEMESTER - NOVERMBER/DECEMBER 2017 
@@ -15,7 +17,7 @@ class Person {
 	private String name, nic;
 	private int age;
 	
-	//CONSTRUCTOR
+	// ***CONSTRUCTOR***
 	public Person() {}
 	
 	public Person(String name, String nic, int age) {
@@ -24,7 +26,7 @@ class Person {
 		this.age = age;
 	}
 	
-	//METHODS
+	// ***METHODS***
 	public void print() {
 		System.out.println("Name : " + name);
 		System.out.println("Nic : " + nic);
@@ -36,7 +38,7 @@ class Student extends Person {
 	private double gpa1, gpa2, gpa3, gpa4, finalgpa;
 	private String result;
 	
-	//CONSTRUCTOR
+	// ***CONSTRUCTOR***
 	public Student(String name, String nic, int age, double gpa1, double gpa2, double gpa3, double gpa4) {
 		super(name, nic, age);
 		
@@ -46,7 +48,7 @@ class Student extends Person {
 		this.gpa4 = gpa4;
 	}
 	
-	//METHODS
+	// ***METHODS***
 	public double calculateFinalGpa() {
 		finalgpa = (gpa1 + gpa2 + gpa3 + gpa4) / 4;
 		return finalgpa;
@@ -70,7 +72,7 @@ abstract class StaffMember extends Person {
 	double basicsalary, loaninstallment;
 	final double allowance = 7800;
 	
-	//CONSTRUCTOR
+	// ***CONSTRUCTOR***
 	public StaffMember() {}
 	
 	public StaffMember(String name, String nic, int age, double basicsalary, double loaninstallment) {
@@ -80,14 +82,14 @@ abstract class StaffMember extends Person {
 		this.loaninstallment = loaninstallment;
 	}
 	
-	//ABSTRACT METHOD
+	// ***ABSTRACT METHOD***
 	public abstract double getSalary();
 }
 
 class AcedemicStaff extends StaffMember {
 	final double academicallowance = 10;
 	
-	//CONSTRUCTOR
+	// ***CONSTRUCTOR***
 	public AcedemicStaff(String name, String nic, int age, double basicsalary, double loaninstallment) {
 		super(name, nic, age, basicsalary, loaninstallment);
 	}
@@ -101,12 +103,12 @@ class AcedemicStaff extends StaffMember {
 class NonAcedemicStaff extends StaffMember {
 	private double overtimehours, overtimepayment;
 	
-	//CONSTRUCTOR
+	// ***CONSTRUCTOR***
 	public NonAcedemicStaff(String name, String nic, int age, double basicsalary, double loaninstallment) {
 		super(name, nic, age, basicsalary, loaninstallment);
 	}
 	
-	//METHODS
+	// ***METHODS***
 	public double overtimeAmount() {
 		return (basicsalary / (20 * 8)) * overtimehours;
 	}
@@ -118,7 +120,7 @@ class NonAcedemicStaff extends StaffMember {
 }
 
 
-//OBJECT CLASS
+// ***OBJECT CLASS***
 public class Main {
     public static void main(String[] args) {
         Student student = new Student("John Doe", "123456789V", 20, 3.5, 3.8, 3.6, 3.7);
